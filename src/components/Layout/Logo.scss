@@ -1,0 +1,70 @@
+.navbar__logo-icons {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: -10px; // slight overlap
+  margin-right: 0.5rem;
+
+  span{
+    position: relative;
+    top: 0;
+    left: 50px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+
+  svg {
+    position: absolute;
+    // opacity: 0.2;
+    transform: rotate(15deg);
+    animation: float 6s ease-in-out infinite;
+  }
+
+  svg:nth-child(1) {
+    left: 6px;
+    top: -10px;
+    width: 25px;
+    height: 25px;
+    transform: rotate(-25deg);
+    // opacity: 0.1;
+  }
+
+  svg:nth-child(2) {
+    left: 5px;
+    top: -10px;
+    width: 40px;
+    height: 40px;
+    transform: rotate(10deg);
+    // opacity: 0.15;
+  }
+
+  svg:nth-child(3) {
+    left: 20px;
+    top: 4px;
+    width: 25px;
+    height: 25px;
+    transform: rotate(20deg);
+    // opacity: 0.1;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(10deg);
+  }
+  50% {
+    transform: translateY(0px) rotate(15deg);
+    -webkit-transform: translateY(0px) rotate(15deg);
+    -moz-transform: translateY(0px) rotate(15deg);
+    -ms-transform: translateY(0px) rotate(15deg);
+    -o-transform: translateY(0px) rotate(15deg);
+}
+  100% {
+    transform: translateY(0) rotate(10deg);
+  }
+}

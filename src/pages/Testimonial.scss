@@ -1,0 +1,60 @@
+.testimonial {
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(90deg, #ff512f, #dd2476, #f7971e, #ffd194);
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+  &__name {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+
+  &__quote {
+    max-width: 700px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }
+
+  &__icon {
+    // background: #fff;
+    padding: 0.75rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+// Optional media queries
+@media (max-width: 768px) {
+  .testimonial {
+    padding: 3rem 1rem;
+
+    &__quote {
+      font-size: 1rem;
+    }
+  }
+}
