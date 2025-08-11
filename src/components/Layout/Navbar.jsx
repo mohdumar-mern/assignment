@@ -22,10 +22,10 @@ const Navbar = ({ footer = false }) => {
       </div>
 
       <nav className={`navbar__links ${isMobileMenuOpen ? 'open' : ''}`}>
-        <a href="#home" onClick={toggleMenu}>Home</a>
-        <a href="#features" onClick={toggleMenu}>Features</a>
-        <a href="#about" onClick={toggleMenu}>About</a>
-        <a href="#contact" onClick={toggleMenu}>Contact</a>
+        <Link to="/" onClick={toggleMenu}>Home</Link>
+        <Link to="portfolio" onClick={toggleMenu}>Portfolio</Link>
+        <Link to="skills" onClick={toggleMenu}>Skills</Link>
+        <Link to="about-me" onClick={toggleMenu}>About me</Link>
       </nav>
 
       {!footer && (

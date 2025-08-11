@@ -1,5 +1,6 @@
 import Logo from "./Logo";
 import "./Footer.scss";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -9,10 +10,10 @@ const Footer = () => {
       </div>
 
       <nav className="footer__links">
-        <a href="#home">Home</a>
-        <a href="#features">Features</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+        <Link to="/" >Home</Link>
+        <Link to="portfolio" >Portfolio</Link>
+        <Link to="skills" >Skills</Link>
+        <Link to="about-me" >About me</Link>
       </nav>
     </footer>
   );

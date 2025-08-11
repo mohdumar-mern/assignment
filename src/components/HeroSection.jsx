@@ -34,7 +34,7 @@ const HeroSection = () => {
             </article>
 
             <figure className="home__image">
-                <img src="images/heroImage.jpg" alt="Designer Workspace" />
+                <img src="images/heroImage.jpg" alt="Designer Workspace" loading='lazy' height={655}/>
             </figure>
         </section>
     );
